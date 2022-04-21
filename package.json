@@ -1,0 +1,31 @@
+{
+  "name": "proyecto-pic",
+  "version": "1.0.0",
+  "description": "Proyecto para Octubre 2022, para PIC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mateocampillo/proyecto-pic.git"
+  },
+  "keywords": [
+    "proyecto",
+    "pic",
+    "octubre",
+    "2022",
+    "mateo",
+    "campillo"
+  ],
+  "author": "Mateo Campillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mateocampillo/proyecto-pic/issues"
+  },
+  "homepage": "https://github.com/mateocampillo/proyecto-pic#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
+}
