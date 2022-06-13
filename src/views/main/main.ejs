@@ -7,10 +7,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/index.css">
     <title>Proyecto PIC</title>
 </head>
 <body>
     <h1>Proyecto PIC</h1>
+    <form action="/comentario" method="POST">
+        <div>
+            <label for="usuario">Nombre:</label><br>
+            <input type="text" name="usuario" id="usuario" required maxlength="100">
+        </div>
+        <div>
+            <label for="comentario">Comentario:</label><br>
+            <textarea name="comentario" id="comentario" cols="30" rows="10" none></textarea>
+        </div>
+        <div>
+            <button type="submit">Enviar comentario</button>
+        </div>
+    </form>
+    <br>
+    <br>
+    <section>
+        <% for(let i = 0; i < comentarios.length; i++) { %>
+            <div>
+                <h2>De: <%= comentarios[i].usuario %></h2>
+                <p><%= comentarios[i].comentario %></p>
+            </div>
+        <% } %> 
+    </section>
 </body>
 </html>

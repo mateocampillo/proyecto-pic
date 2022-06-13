@@ -16,11 +16,9 @@ app.listen(3000, () => { console.log("Servidor corriendo en el puerto 3000") });
 
 //imports
 const main = require("./routes/main");
-const users = require("./routes/users");
 
 //seteo de rutas
 app.use("/", main);
-app.use("/users", users);
     //error 404
 app.use((req, res, next) => {
     res.status(404).render("./main/not-found");
