@@ -2,9 +2,10 @@ const express = require("express");
 const router = express.Router();
 
 //imports
-const mainController = require("../controllers/mainController")
+const mainController = require("../controllers/mainController");
 
-router.get('/', mainController.index);                              //ruta al Index
-router.post('/comentario', mainController.comentario);              //ruta para recibir los comentarios
+router.get('/', mainController.index);
+router.post('/comentario', mainController.comentario);
+router.get('/comentarios', mainController.comentarios);
 
 module.exports = router;

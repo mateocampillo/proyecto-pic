@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+body{
+    background-color: #f8bae5;
+    position: relative;
+}
+
+.container-mensajes{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.volver{
+    position: absolute;
+    bottom: 10%;
+    right: 50%;
+}
+
+.h1-mensajes{
+    margin: 15px auto;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.container-individual{
+    margin: 10px 10px;
+}
+
+.hr-mensajes{
+    width: 50%;
+    color: #000;
+    margin: 0px auto 10px;
+}
+
+@media (min-width: 400px){
+
+}
+
+@media (min-width: 900px){
+    
+}

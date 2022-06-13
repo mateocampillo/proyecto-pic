@@ -11,29 +11,80 @@
     <title>Proyecto PIC</title>
 </head>
 <body>
-    <h1>Proyecto PIC</h1>
-    <form action="/comentario" method="POST">
-        <div>
-            <label for="usuario">Nombre:</label><br>
-            <input type="text" name="usuario" id="usuario" required maxlength="100">
-        </div>
-        <div>
-            <label for="comentario">Comentario:</label><br>
-            <textarea name="comentario" id="comentario" cols="30" rows="10" none></textarea>
-        </div>
-        <div>
-            <button type="submit">Enviar comentario</button>
-        </div>
-    </form>
-    <br>
-    <br>
-    <section>
-        <% for(let i = 0; i < comentarios.length; i++) { %>
+    <header>
+        <hr>
+        <ul class="container-header">
+            <li>Casamiento</li>
+            <li>Nosotros</li>
+            <li>Álbum</li>
+            <li>Mensajes</li>
+        </ul>
+        <hr>
+    </header>
+    <div><img class="img-presentacion" src="/images/igTemplate1080x1080.jpeg" alt="Foto de presentacion"></div>
+    <main>
+        <section>
+            <h2 class="casamiento-titulo">Nuestro casamiento</h2>
+            <p class="casamiento-parrafo">Nos vamos a casar el 'x' de '' en 'x' a las 'x'pm. Queremos compartir con ustedes el día más especial de nuestra vida.</p>
+            <p class="casamiento-esperamos">LOS ESPERAMOS!</p>
+        </section>
+        <hr>
+        <section>
+            <h2 class="pareja-nosotros">Nosotros</h2>
             <div>
-                <h2>De: <%= comentarios[i].usuario %></h2>
-                <p><%= comentarios[i].comentario %></p>
+                <h3 class="pareja-titulo">INES</h3>
+                <p class="pareja-descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin, urna sed facilisis ullamcorper, orci erat elementum nibh, nec laoreet ipsum odio vel orci. Aliquam erat volutpat. Aenean porttitor enim sit amet quam faucibus gravida ac ut nisi. Duis augue ligula, aliquet non leo et, ornare lacinia est. Maecenas luctus metus pharetra neque gravida, at mollis ipsum porta. Vestibulum maximus rutrum bibendum.</p>
             </div>
-        <% } %> 
-    </section>
+            <div>
+                <h3 class="pareja-titulo">PATRICIO</h3>
+                <p class="pareja-descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin, urna sed facilisis ullamcorper, orci erat elementum nibh, nec laoreet ipsum odio vel orci. Aliquam erat volutpat. Aenean porttitor enim sit amet quam faucibus gravida ac ut nisi. Duis augue ligula, aliquet non leo et, ornare lacinia est. Maecenas luctus metus pharetra neque gravida, at mollis ipsum porta. Vestibulum maximus rutrum bibendum.</p>
+            </div>
+        </section>
+        <hr>
+        <section class="container-fotos">
+            <!-- Agregar flex de fotos -->
+            <h2>Colección de fotos</h2>
+        </section>
+        <hr>
+        <section>
+            <h2 class="h2-mensaje">Dejar un mensaje</h2>
+            <div>
+                <form action="/comentario" method="post" class="container-mensaje">
+                    <div class="container-form">
+                        <label for="usuario">De:</label>
+                        <input type="text" name="usuario" id="usuario" required maxlength="100">
+                    </div>
+                    <div class="container-form">
+                        <label for="comentario">Mensaje:</label><br>
+                        <textarea name="comentario" id="comentario" cols="45" rows="7" required></textarea>
+                    </div>
+                    <div class="container-form">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+            <hr>
+            <h2 class="h2-mensaje">Lista de mensajes</h2>
+            <div>
+                <% for(let i = 0; i < comentarios.length; i++) { %>
+                        <div>
+                            <% if(i != 0) { %>
+                            <hr class="hr-mensaje">
+                            <% } %>
+                            <h3 class="autor-mensaje">De: <%= comentarios[i].usuario %></h3>
+                            <p class="mensaje-mensaje"><%= comentarios[i].comentario %></p>
+                        </div>
+                <% } %>
+            </div>
+            <form style="text-align: center;" action="/comentarios" method="get"><button type="submit" class="boton-mensaje">Ver mas mensajes</button></form>
+        </section>
+        <hr>
+    </main>
+    <footer>
+        <section class="container-footer">
+            <div><h4>Todos los derechos reservados, Mateo Campillo 2022</h4></div>
+            <div><h4>Fotografias for x</h4></div>
+        </section>
+    </footer>
 </body>
 </html>

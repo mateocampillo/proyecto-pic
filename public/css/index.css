@@ -8,3 +8,141 @@
 body{
     background-color: #f8bae5;
 }
+
+hr{
+    color: #000;
+    margin: 10px auto;
+    width: 95%;
+}
+
+.img-presentacion{
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.container-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.casamiento-titulo{
+    font-size: 1.7rem;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.casamiento-parrafo{
+    padding: 0px 10px;
+    font-size: 1.2rem;
+}
+
+.casamiento-esperamos{
+    font-size: 1.2rem;
+    margin: 10px 0px 20px;
+    text-align: center;
+}
+
+.pareja-nosotros{
+    text-align: center;
+    font-size: 1.7rem;
+    margin: 10px auto;
+}
+
+.pareja-titulo{
+    font-size: 1.5rem;
+    margin: 10px 0px 10px 25px;
+}
+
+.pareja-descripcion{
+    font-size: 1.1rem;
+    margin: 10px auto 20px;
+    padding: 0px 15px;
+    text-align: center;
+}
+
+.h2-mensaje{
+    text-align: center;
+    margin: 10px 0px 15px;
+}
+
+.container-mensaje{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-form label{
+    font-size: 1.4rem;
+    margin: 5px 0px 10px 15px;
+}
+
+.container-form input{
+    font-size: 1.1rem;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+.container-form textarea{
+    font-size: 1.2rem;
+    margin: 5px 0px 10px 15px;
+}
+
+.container-form button{
+    font-size: 1.2rem;
+    margin: 0px 0px 10px 15px;
+    padding: 4px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.hr-mensaje{
+    color: #000;
+    margin: 15px auto;
+    width: 30%;
+}
+
+.autor-mensaje{
+    margin: 10px 0px 0px 10px;
+}
+
+.mensaje-mensaje{
+    margin: 0px 10px 0px 15px;
+    font-size: 1.2rem;
+}
+
+.boton-mensaje{
+    margin: 15px auto;
+    padding: 4px;
+    font-size: 1.1rem;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+
+}
+
+.container-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-footer div{ 
+    margin: 5px 10px;
+    font-size: 1rem;
+}
+
+.container-fotos h2{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 400px){
+
+}
+
+@media (min-width: 900px){
+    
+}
