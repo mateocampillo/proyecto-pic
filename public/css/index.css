@@ -36,14 +36,23 @@ hr{
 }
 
 .casamiento-parrafo{
+    margin: 0px 20px;
     padding: 0px 10px;
     font-size: 1.2rem;
+}
+
+.casamiento-ubicacion{
+    margin: 10px 0px;
+    padding: 0px 10px;
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 .casamiento-esperamos{
     font-size: 1.2rem;
     margin: 10px 0px 20px;
     text-align: center;
+    font-weight: 600;
 }
 
 .pareja-nosotros{
@@ -113,7 +122,12 @@ hr{
     font-size: 1.2rem;
 }
 
-.boton-mensaje{
+.boton-mensaje {
+    text-align: center;
+    margin: 35px 0px;
+}
+
+.boton-mensaje a{
     margin: 15px auto;
     padding: 4px;
     font-size: 1.1rem;
@@ -121,28 +135,92 @@ hr{
     background-color: #fff;
     border: 1px solid #000;
     border-radius: 5px;
-
+    text-decoration: none;
 }
 
 .container-footer{
     display: flex;
     flex-direction: column;
+    font-size: 1rem;
 }
 
 .container-footer div{ 
     margin: 5px 10px;
-    font-size: 1rem;
 }
 
 .container-fotos h2{
     text-align: center;
-    font-size: 1.5rem;
 }
 
-@media (min-width: 400px){
+@media (min-width: 450px){
+    .container-header{
+        font-size: 1.5rem;
+    }
 
-}
+    .img-presentacion{
+        width: 70%;
+    }
 
-@media (min-width: 900px){
+    .casamiento-titulo{
+        font-size: 1.9rem;
+    }
     
+    .casamiento-parrafo{
+        margin: 0px 40px;
+        font-size: 1.3rem;
+    }
+
+    .casamiento-ubicacion{
+        font-size: 1.3rem;
+    }
+    
+    .casamiento-esperamos{
+        font-size: 1.2rem;
+        margin: 10px 0px 20px;
+        text-align: center;
+    }
+
+    .pareja-descripcion{
+        font-size: 1.3rem;
+    }
+
+    .container-footer{
+        font-size: 1.2rem;
+    }
+
+    .container-form{
+        align-self: center;
+    }
+
+}
+
+@media (min-width: 800px){
+    .img-presentacion{
+        width: 40%;
+    }
+
+}
+
+@media (min-width: 1200px){
+    
+    .img-presentacion{
+        width: 20%;
+    }
+
+    .casamiento-parrafo{
+        text-align: center;
+    }
+
+    .autor-mensaje{
+        text-align: center;
+    }
+    
+    .mensaje-mensaje{
+        text-align: center;
+    }
+
+    .container-footer{
+        text-align: center;
+    }
+
 }

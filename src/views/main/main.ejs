@@ -25,7 +25,9 @@
     <main>
         <section>
             <h2 class="casamiento-titulo">Nuestro casamiento</h2>
-            <p class="casamiento-parrafo">Nos vamos a casar el 'x' de '' en 'x' a las 'x'pm. Queremos compartir con ustedes el día más especial de nuestra vida.</p>
+            <p class="casamiento-parrafo">Nos vamos a casar el Sábado 22 de Octubre en a las 17:00 pm. Queremos compartir con ustedes el día más especial de nuestra vida.</p>
+            <p class="casamiento-ubicacion">Quinta Los Galpones.</p>
+            <p class="casamiento-ubicacion">Quintino Bocayuva 655, Benavídez.</p>
             <p class="casamiento-esperamos">LOS ESPERAMOS!</p>
         </section>
         <hr>
@@ -64,7 +66,7 @@
                 </form>
             </div>
             <hr>
-            <h2 class="h2-mensaje">Lista de mensajes</h2>
+            <h2 class="h2-mensaje">Últimos mensajes</h2>
             <div>
                 <% for(let i = 0; i < comentarios.length; i++) { %>
                         <div>
@@ -76,7 +78,7 @@
                         </div>
                 <% } %>
             </div>
-            <form style="text-align: center;" action="/comentarios" method="get"><button type="submit" class="boton-mensaje">Ver mas mensajes</button></form>
+            <div class="boton-mensaje"><a href="/comentarios">Ver mas mensajes</a></div>
         </section>
         <hr>
     </main>

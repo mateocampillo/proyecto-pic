@@ -11,12 +11,11 @@
     <title>Mensajes</title>
 </head>
 <body>
-    <a href="/" class="volver">Volver</a>
     <section class="container-mensajes">
         <h1 class="h1-mensajes">Listado de mensajes</h1>
-        <% for(let i = 0; i < comentarios.length; i++) { %>
+        <% for(let i = comentarios.length - 1; i >= 0; i--) { %>
             <div class="container-individual">
-                <% if(i != 0) {%>
+                <% if(i != comentarios.length - 1) {%>
                     <hr class="hr-mensajes">
                 <% } %>
                 <h3>De: <%= comentarios[i].usuario %></h3>
@@ -24,5 +23,6 @@
             </div>
         <% } %>
     </section>
+    <div class="volver"><a href="/">Volver</a></div>
 </body>
 </html>
