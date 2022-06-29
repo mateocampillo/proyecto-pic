@@ -5,13 +5,26 @@
     font-family: 'Jost', sans-serif;
 }
 
+.show-flex{
+    display: flex;
+}
+
+.show-block{
+    display: block;
+}
+
+.hidden{
+    display: none;
+}
+
 body{
     background-color: #f8bae5;
+    position: relative;
 }
 
 hr{
     color: #000;
-    margin: 10px auto;
+    margin: 30px auto;
     width: 95%;
 }
 
@@ -21,12 +34,83 @@ hr{
     margin: 20px auto;
 }
 
-.container-header{
+.container-header-mobile{
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-menu-icono{
+    font-size: 2.3rem;
+    background-color: #f8bae5;
+}
+
+.boton-menu{
+    background: none;
+    border: none;
+    margin: 15px 0px 0px;
+}
+
+.menu-desplegable-mobile{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    right: 100%;
+    background-color: #f8bae5;
+}
+
+@keyframes transicion-menu-entrada {
+    from {right: 100%;}
+    to {right: 0%;}
+}
+
+@keyframes transicion-menu-salida {
+    from {right: 0%;}
+    to {right: 100%;}
+}
+
+.clase-transicion-entrada{
+    transition: all;
+    animation: transicion-menu-entrada 1000ms 1 normal forwards ease-in-out;
+}
+
+.clase-transicion-salida{
+    transition: all;
+    animation: transicion-menu-salida 1000ms 1 normal forwards ease-in-out;
+}
+
+.menu-desplegable-mobile a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5rem;
+}
+
+.menu-desplegable-mobile ul{
+    list-style: none;
+    margin: 10px 0px;
+}
+
+.menu-desplegable-mobile li{
+    padding: 5px 0px 5px;
+}
+
+.menu-desplegable-mobile hr{
+    width: 50%;
+    margin: 15px auto;
+}
+
+.container-header ul{
+    display: none;
     flex-direction: row;
     justify-content: space-around;
     list-style: none;
     font-size: 1.2rem;
+}
+
+.container-header hr{
+    display: none;
 }
 
 .casamiento-titulo{
@@ -153,8 +237,27 @@ hr{
 }
 
 @media (min-width: 450px){
-    .container-header{
+
+    .container-header-mobile{
+        display: none;
+    }
+
+    .menu-desplegable-mobile{
+        display: none;
+    }
+
+    .container-header ul{
         font-size: 1.5rem;
+        display: flex;
+    }
+
+    .container-header a{
+        text-decoration: none;
+        color: #000;
+    }
+
+    .container-header hr{
+        display: block;
     }
 
     .img-presentacion{

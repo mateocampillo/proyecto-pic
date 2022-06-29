@@ -6,25 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6e4f7b7266.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/index.css">
     <title>Proyecto PIC</title>
 </head>
 <body>
     <header>
-        <hr>
-        <ul class="container-header">
-            <li>Casamiento</li>
-            <li>Nosotros</li>
-            <li>Álbum</li>
-            <li>Mensajes</li>
-        </ul>
-        <hr>
+        <div class="container-header">
+            <hr>
+            <ul>
+                <li><a href="#casamiento">Casamiento</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#album">Álbum</a></li>
+                <li><a href="#mensajes">Mensajes</a></li>
+            </ul>
+            <hr>
+        </div>
+        <div class="container-header-mobile">
+            <button class="boton-menu"><i class="fa-solid fa-bars boton-menu-icono"></i></button>
+        </div>
+        <div class="menu-desplegable-mobile">
+            <ul>
+                <li><a href="#casamiento">Casamiento</a></li>
+                <hr>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <hr>
+                <li><a href="#album">Álbum</a></li>
+                <hr>
+                <li><a href="#mensajes">Mensajes</a></li>
+            </ul>
+        </div>
     </header>
     <div><img class="img-presentacion" src="/images/igTemplate1080x1080.jpeg" alt="Foto de presentacion"></div>
     <main>
         <section>
-            <h2 class="casamiento-titulo">Nuestro casamiento</h2>
+            <h2 id="casamiento" class="casamiento-titulo">Nuestro casamiento</h2>
             <p class="casamiento-parrafo">Nos vamos a casar el Sábado 22 de Octubre en a las 17:00 pm. Queremos compartir con ustedes el día más especial de nuestra vida.</p>
             <p class="casamiento-ubicacion">Quinta Los Galpones.</p>
             <p class="casamiento-ubicacion">Quintino Bocayuva 655, Benavídez.</p>
@@ -32,7 +49,7 @@
         </section>
         <hr>
         <section>
-            <h2 class="pareja-nosotros">Nosotros</h2>
+            <h2 id="nosotros" class="pareja-nosotros">Nosotros</h2>
             <div>
                 <h3 class="pareja-titulo">INES</h3>
                 <p class="pareja-descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin, urna sed facilisis ullamcorper, orci erat elementum nibh, nec laoreet ipsum odio vel orci. Aliquam erat volutpat. Aenean porttitor enim sit amet quam faucibus gravida ac ut nisi. Duis augue ligula, aliquet non leo et, ornare lacinia est. Maecenas luctus metus pharetra neque gravida, at mollis ipsum porta. Vestibulum maximus rutrum bibendum.</p>
@@ -45,11 +62,11 @@
         <hr>
         <section class="container-fotos">
             <!-- Agregar flex de fotos -->
-            <h2>Colección de fotos</h2>
+            <h2 id="album">Colección de fotos</h2>
         </section>
         <hr>
         <section>
-            <h2 class="h2-mensaje">Dejar un mensaje</h2>
+            <h2 id="mensajes" class="h2-mensaje">Dejar un mensaje</h2>
             <div>
                 <form action="/comentario" method="post" class="container-mensaje">
                     <div class="container-form">
@@ -88,5 +105,6 @@
             <div><h4>Fotografias for x</h4></div>
         </section>
     </footer>
+    <script src="/js/menu-desplegable.js"></script>
 </body>
 </html>
